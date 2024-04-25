@@ -1,6 +1,8 @@
-# Colorado Ranked Slippi Leaderboard
+# Saskatchewan Ranked Slippi Leaderboard
 
-Code powering https://grantismo.github.io/CoSlippiLeaderboard/#/
+Code powering https://advernichuk.github.io/SaskSlippiLeaderboard/#/
+
+Forked from [@grantismo](https://github.com/grantismo)'s [CO Slippi Leaderboard](https://github.com/Grantismo/CoSlippiLeaderboard)
 
 ## Technologies
 
@@ -23,7 +25,7 @@ The leaderboard is built from two programs:
 * The undocumented slippi api this depends on may break at any time
 * This project takes extra consideration to avoid slamming the slippi servers with api calls, please be considerate of this.
 * Logic for determining ranks may become out of sync with the official slippi rank logic
-* I would appreciate if you keep my 'by me a coffee' link and give me credit for building this in your leaderboard.
+* I didn't feel like setting up the google sheet so I'm manually entering tags :)
 
 ## Getting started
 
@@ -77,7 +79,7 @@ touch cron/logs/log.txt
 ```
 - You can look in cron/logs/log.txt to see the output of the latest cron run.
 - That's it!
-- DM me on discord if you run into problems. blorppppp#2398
+- DM blorp on discord if you run into problems. blorppppp#2398
 
 ### Common issues:
 - The cron server isn't started. `sudo service cron status`
@@ -105,5 +107,5 @@ touch cron/logs/log.txt
 - `npm run deploy` – builds and deploys project to Github pages
 - `./cron/run.sh` - manually runs the cron job
 
-## Support me
-☕ [buy me a coffee](https://www.buymeacoffee.com/blorppppp)
+## Support the original creator
+☕ [buy blorp a coffee!](https://www.buymeacoffee.com/blorppppp)
