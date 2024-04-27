@@ -9,7 +9,7 @@ const fs = syncFs.promises;
 const execPromise = util.promisify(exec);
 
 const getPlayerConnectCodes = async (): Promise<string[]> => {
-  return ['SWAG#513','SK#06','BZF#1','GZAC#414','NOPE#475','XD#946','JESS#405','LEVI#666','UUUH#325','KAIR#152','MUX#711','JKE#929','PAUL#101','DENM#907','SYMB#384','TUBA#262','SLEE#871','MISS#4','KIDD#880','LONE#872','LV#201','FOX#509','SNOW#141','AEDA#395','CELL#0','GWK#466','KING#406','BAYDA#77','ZOJ#107','BTEK#426','SUGG#849','CNDY#347','CROW#730','TOP#861'] };
+  return ['SWAG#513','SK#06','BZF#1','GZAC#414','NOPE#475','XD#946','JESS#405','LEVI#666','UUUH#325','KAIR#152','MUX#711','JKE#929','PAUL#101','DENM#907','SYMB#384','TUBA#262','SLEE#871','MISS#4','KIDD#880','LONE#872','LV#201','FOX#509','SNOW#141','AEDA#395','CELL#0','GWK#466','KING#406','BAYDA#77','ZOJ#107','BTEK#426','SUGG#849','CNDY#347','CROW#730','TWOP#861'] };
 
 const getPlayers = async () => {
   const codes = await getPlayerConnectCodes()
