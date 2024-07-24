@@ -56,7 +56,7 @@ async function main() {
   if(stderr2) {
     console.error(stderr2);
   }
-  console.log('Deploy complete.');
+  console.log('Deploy complete!');
 }
 
 main();
