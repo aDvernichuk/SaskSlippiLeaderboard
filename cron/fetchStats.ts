@@ -1,4 +1,4 @@
-import { getPlayerDataThrottled } from './slippi'
+import { getPlayerData, getPlayerDataThrottled } from './slippi'
 import * as syncFs from 'fs';
 import * as path from 'path';
 import util from 'util';
@@ -18,8 +18,8 @@ const getPlayers = async () => {
   const results = await Promise.all(allData.map(p => p.catch(e => e)));
   const validResults = results.filter(result => !(result instanceof Error));
   const unsortedPlayers = validResults
-    .filter((data: any) => data?.data?.getConnectCode?.user)
-    .map((data: any) => data.data.getConnectCode.user);
+    .filter((data: any) => data?.data?.getUser)
+    .map((data: any) => data.data.getUser);
   return unsortedPlayers.sort((p1, p2) =>
     p2.rankedNetplayProfile.ratingOrdinal - p1.rankedNetplayProfile.ratingOrdinal)
 }
