@@ -1,11 +1,11 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 442:
+/***/ 397:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-var __resourceQuery = "?http%3A%2F%2Flocalhost%3A36471%2Flazy-compilation-using-";
+var __resourceQuery = "?http%3A%2F%2Flocalhost%3A41209%2Flazy-compilation-using-";
 /* global __resourceQuery */
 
 
@@ -87,7 +87,7 @@ exports.keepAlive = function (options) {
 /***/ 246:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var client = __webpack_require__(442)
+var client = __webpack_require__(397)
 var data = "/home/ketsu/Documents/aDvernichuk.github.io/SaskSlippiLeaderboard/node_modules/ts-loader/index.js!/home/ketsu/Documents/aDvernichuk.github.io/SaskSlippiLeaderboard/src/index.tsx";
 var resolveSelf, onError;
 module.exports = new Promise(function(resolve, reject) { resolveSelf = resolve; onError = reject; });
