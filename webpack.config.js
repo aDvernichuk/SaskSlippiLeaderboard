@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const TerserJSPlugin = require('terser-webpack-plugin');
-const CnameWebpackPlugin = require('cname-webpack-plugin');
+//const CnameWebpackPlugin = require('cname-webpack-plugin');
 const settings = require('./settings');
 
 const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
@@ -16,9 +16,6 @@ module.exports = {
   mode,
   optimization: {
     minimize: false,
-    splitChunks: {
-      chunks: "all",
-    },
   },
 
   devServer: {
@@ -105,8 +102,5 @@ module.exports = {
         </html>
       `,
     }),
-    ...(mode !== 'production'
-      ? [new webpack.HotModuleReplacementPlugin()]
-      : [...(settings.cname ? [new CnameWebpackPlugin({ domain: settings.cname })] : [])]),
   ],
 };
