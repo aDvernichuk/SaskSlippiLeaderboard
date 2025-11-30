@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
+//const TerserJSPlugin = require('terser-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 const settings = require('./settings');
 
@@ -15,8 +15,7 @@ module.exports = {
 
   mode,
   optimization: {
-    minimize: true,
-    minimizer: [new TerserJSPlugin({})],
+    minimize: false,
     splitChunks: {
       chunks: "all",
     },
