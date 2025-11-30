@@ -19,7 +19,7 @@ module.exports = {
     minimizer: [new TerserJSPlugin({})],
     splitChunks: {
       chunks: "all",
-    }.
+    },
   },
 
   devServer: {
