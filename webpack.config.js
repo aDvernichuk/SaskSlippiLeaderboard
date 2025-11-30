@@ -15,8 +15,11 @@ module.exports = {
 
   mode,
   optimization: {
+    minimize: true,
     minimizer: [new TerserJSPlugin({})],
-    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: "all",
+    }.
   },
 
   devServer: {
