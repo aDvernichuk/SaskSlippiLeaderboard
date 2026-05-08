@@ -2632,7 +2632,7 @@ module.exports = styleTagTransform;
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"updated":1778212819654}');
+module.exports = /*#__PURE__*/JSON.parse('{"updated":1778214618435}');
 
 /***/ }),
 
